@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|images|robots\.txt|js|xml|css|flatui|lib|notes|sidebar|source|$)
+RewriteRule ^(.*)$ /evtManage/index.php/$1 [L,QSA]
